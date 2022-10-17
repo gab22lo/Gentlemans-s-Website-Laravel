@@ -21,3 +21,5 @@ Route::get('/professores', function () {
     return view('professor');
 })->name("professor");
 
+Route::get('/alunos/novo','AlunosController@create')
+Route::post('/alunos/novo','AlunosController@store')->name('registrar_aluno');

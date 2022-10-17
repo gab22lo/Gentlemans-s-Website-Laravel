@@ -1,10 +1,12 @@
 <?php
 
-namespace app;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-use illuminate\database\eloquent\model;
-class Aluno extends model
+class Aluno extends Model
 {
-    protected $fillable = ['nome','Materias','RA','FF']
+    use HasFactory;
+    protected $fillable = ['nome','Materias','RA','FF'];
 }

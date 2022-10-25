@@ -7,7 +7,7 @@
     <title>Cadastrando aluno</title>
 </head>
 <body>
-    <from action="{{ route('registrar_aluno') }}" method="POST">
+    <from action="{{ route('registrar_alunos') }}" method="POST">
         @csrf
         <label for="">Nome</label> <br />
         <input type="text" name="nome"> <br />

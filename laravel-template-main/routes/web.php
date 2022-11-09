@@ -12,8 +12,4 @@ Route::get('/professores', function() {
 }) -> name("professores");
 
 Route::get('/alunos', 'App\Http\Controllers\AlunosController@create');
-Route::post('/alunos', 'App\Http\Controllers\AlunosController@store')->name("registrar_alunos");
-
-Route::get('/materias', function() {
-    return view('materias');
-}) -> name("materias");
+Route::post('/alunos', 'App\Http\Controllers\AlunosController@store')->name("registrar_aluno");

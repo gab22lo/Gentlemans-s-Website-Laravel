@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAlunosTable extends migration
+class CreateAlunosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,10 +15,14 @@ class CreateAlunosTable extends migration
     {
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('Materias');
-            $table->decimal('RA');
-            $table->string('FF');
+            $table->string('CPF')->unique();
+            $table->string('Nome');
+            $table->string('CEP');
+            $table->string('Rua');
+            $table->string('Bairro');
+            $table->string('Cidade');
+            $table->integer('Número');
+            $table->string('filme favorito');
             $table->timestamps();
         });
     }

@@ -22,7 +22,7 @@ class CreateAlunosTable extends Migration
             $table->string('Bairro');
             $table->string('Cidade');
             $table->integer('Número');
-            $table->string('filme favorito');
+            $table->string('Filme');
             $table->timestamps();
         });
     }

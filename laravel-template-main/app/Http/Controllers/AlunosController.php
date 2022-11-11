@@ -22,7 +22,7 @@ class AlunosController extends Controller
         'Bairro' => $request->Bairro,
         'Cidade' => $request->Cidade,
         'Número' => $request->Número,
-        'Filme Favorito'=> $request->Filme,
+        'Filme'=> $request->Filme,
      ]);
 
     return "Aluno Criado com Sucesso!";

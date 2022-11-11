@@ -11,7 +11,7 @@
         <label for="">CPF</label> <br />
         <input type="text" name="CPF"> <br />
         <label for="">Nome Completo</label> <br />
-        <input type="text" name="Nome Completo"> <br />
+        <input type="text" name="Nome"> <br />
         <label for="">CEP</label> <br />
         <input type="text" name="CEP"> <br />
         <label for="">Rua</label> <br />
@@ -23,7 +23,7 @@
         <label for="">Número</label> <br />
         <input type="text" name="Número"> <br />
         <label for="">Filme Favorito</label> <br />
-        <input type="text" name="filme favorito"> <br />
+        <input type="text" name="Filme"> <br />
         <button> Salvar</button>
     </form>
 </body>

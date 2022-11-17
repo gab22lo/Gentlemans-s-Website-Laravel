@@ -23,6 +23,8 @@ class CreateAlunosTable extends Migration
             $table->string('Cidade');
             $table->integer('Número');
             $table->string('Filme');
+            $table->string('Username')->unique();
+            $table->string('Senha');
             $table->timestamps();
         });
     }

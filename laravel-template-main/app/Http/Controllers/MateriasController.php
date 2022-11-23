@@ -24,7 +24,8 @@ class MateriasController extends Controller
             'Professor' => $request->Professor,
         ]);
 
-    return "Matéria Criada com Sucesso!";
+    return view('/');
+    
 
     }
 }

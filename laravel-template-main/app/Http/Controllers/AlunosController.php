@@ -25,18 +25,8 @@ class AlunosController extends Controller
             'Número' => $request->Número,
             'Filme'=> $request->Filme,
         ]);                     
-      
-    
-        User::create([
-        
-            'name'=> $request->name,
-            'email'=> $request->email,
-            'password'=> $request->password,
-        ]);
-        //$user = User::first();
-        //$user->assignRole('aluno');
 
-    return "Aluno Criado com Sucesso!";
+        return view('auth.register');
     
     }
 }

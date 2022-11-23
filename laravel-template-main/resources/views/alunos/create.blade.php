@@ -24,14 +24,7 @@
         <input type="text" name="Número"> <br />
         <label for="">Filme Favorito</label> <br />
         <input type="text" name="Filme"> <br />
-        <label for="">Username</label> <br />
-        <input type="text" name="name"> <br />
-        <label for="">Email</label> <br />
-        <input type="text" name="email"> <br />
-        <label for="">Senha (8 dígitos)</label> <br />
-        <input type="text" name="password"> <br />
         <button> Salvar</button>
     </form>
 </body>
-</html>
 </html>

@@ -7,9 +7,9 @@ Route::get('/', function () {
     return view('welcome');
 }) -> name("home");
 
-Route::get('/principal', function() {
+Route::get('/perfil', function() {
     return view('principal.create');
-}) -> name("principal");
+}) -> name("aluno");
 
 Route::get('/alunos', 'App\Http\Controllers\AlunosController@create');
 Route::post('/alunos', 'App\Http\Controllers\AlunosController@store')->name("registrar_aluno");
@@ -28,3 +28,10 @@ Route::view('lista_alunos','lista_alunos');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', function() {
+    return view('principal.home');
+}) -> name("Home");
+
+Route::get('/User','App\Http\Controllers\Auth\RegisterController@validator')->name("Registrar_user");
+Route::post('/User','App\Http\Controllers\Auth\RegisterController@make');

@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\professore;
-use App\Models\User;
+use App\Models\professor;
 
 class ProfessoresController extends Controller
 {
@@ -15,7 +14,7 @@ class ProfessoresController extends Controller
 
     public function store(Request $request)
     {
-        professore::create([
+        professorescontroller::create([
             'CPF' => $request->CPF,
             'Nome' => $request->Nome,
             'CEP' => $request->CEP,
@@ -23,12 +22,10 @@ class ProfessoresController extends Controller
             'Bairro' => $request->Bairro,
             'Cidade' => $request->Cidade,
             'Número' => $request->Número,
-        ]);  
+        ]);
 
-        
-    return view('auth.register');
-    
-    //"Professor Criado com Sucesso!";
+
+    return view('auth.registerprofessor');
 
     }
 }

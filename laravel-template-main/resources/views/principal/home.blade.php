@@ -55,10 +55,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contact</a></li>
+      <li class="active"><a href="/">Home</a></li>
+        <li class="active"><a href="home_a">Aluno</a></li>
+        <li class="active"><a href="home_p">Professor</a></li>
+        <li class="active"><a href="#">Secretaria</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -70,23 +70,23 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      <p><a href="#">Cursos</a></p>
+      <p><a href="info">Minhas informacoes</a></p>
+      <p><a href="#"></a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1>Bem vindo, Aluno!</h1>
+      <p>Aqui se encontram todas as funcionalidades necessarias para o seu ensino!</p>
       <hr>
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
+      <h3></h3>
+      <p></p>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>ADS</p>
+        <p></p>
       </div>
       <div class="well">
-        <p>ADS</p>
+        <p></p>
       </div>
     </div>
   </div>

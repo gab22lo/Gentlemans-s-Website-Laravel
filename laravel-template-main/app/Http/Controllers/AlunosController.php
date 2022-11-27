@@ -24,9 +24,12 @@ class AlunosController extends Controller
             'Cidade' => $request->Cidade,
             'Número' => $request->Número,
             'Filme'=> $request->Filme,
-        ]);                     
 
-        return view('auth.register');
+        ]);                     
+    
+        
+
+    return view('auth.registeraluno');
     
     }
 }

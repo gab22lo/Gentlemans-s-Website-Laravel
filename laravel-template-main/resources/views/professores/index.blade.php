@@ -8,6 +8,9 @@
                         <h2>Professores </h2>
                     </div>
                     <div class="card-body">
+                    <a href="/home_s" class="btn btn-success btn-sm">
+                           Voltar
+                        </a>
                         <a href="{{ url('/professores') }}" class="btn btn-success btn-sm" title="Cadastrar novo professor">
                            Cadastrar
                         </a>

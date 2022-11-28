@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AlunoController; 
 
 
 Route::get('/', function () {
@@ -11,9 +12,34 @@ Route::get('/perfil', function() {
     return view('principal.create');
 }) -> name("aluno");
 
-Route::get('/User','App\Http\Controllers\Auth\RegisterController@validator')->name("Registrar_user");   //Crete User
-Route::post('/User','App\Http\Controllers\Auth\RegisterController@make');
+Route::get('/alunos', 'App\Http\Controllers\AlunosController@create');
+Route::post('/alunos', 'App\Http\Controllers\AlunosController@store')->name("registrar_aluno");
 
+
+
+Route::middleware(['secretaria'])->group(function(){
+    route::get('home_s', function(){
+
+        return view('secretaria.home');
+
+    });
+});
+
+Route::middleware(['aluno'])->group(function(){
+    route::get('home_a', function(){
+
+        return view('principal.home');
+
+    });
+});
+
+Route::middleware(['professor'])->group(function(){
+    route::get('home_p', function(){
+
+        return view('professores.home_p');
+
+    });
+});
 
 //CRUD ALUNOS
 Route::get('/alunos', 'App\Http\Controllers\AlunosController@create'); //Create Aluno
@@ -42,15 +68,43 @@ Route::post('/materia/editar/{id}', 'App\Http\Controllers\MateriasController@upd
 Route::get('/materia/excluir/{id}', 'App\Http\Controllers\MateriasController@delete'); //Delete Materia
 Route::post('/materia/excluir/{id}', 'App\Http\Controllers\MateriasController@destroy')->name("excluir_materia");
 
-Route::get('/home', function() {
-    return view('Aluno');
-}) -> name("Home");
-
-Route::view('lista_alunos','lista_alunos');
-
 Route::get('/indexalunos', 'App\Http\Controllers\AlunosController@index'); //View para visualização de todos alunos
 Route::get('/indexprofessores', 'App\Http\Controllers\ProfessoresController@index'); //View para visualização de todos professores
 Route::get('/indexmaterias', 'App\Http\Controllers\MateriasController@index'); //View para visualização de todos materias
+
+
+
+Route::get('/User','App\Http\Controllers\Auth\RegisterController@validator')->name("Registrar_user");
+Route::post('/User','App\Http\Controllers\Auth\RegisterController@make');
+
+Route::get('/materias', 'App\Http\Controllers\MateriasController@create');
+Route::post('/materias', 'App\Http\Controllers\MateriasController@store')->name("registrar_materia");
+
+Route::get('/professores', 'App\Http\Controllers\ProfessoresController@create');
+Route::post('/professores', 'App\Http\Controllers\ProfessoresController@store')->name("registrar_professores");
+
+Route::view('lista_alunos','lista_alunos');
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/User','App\Http\Controllers\Auth\RegisterController@validator')->name("Registrar_user");
+Route::post('/User','App\Http\Controllers\Auth\RegisterController@make');
+
+Route::get('/info', function() {
+    return view('principal.perfil');
+}) -> name("info");
+
+
+
+
+
+Route::get('/info_p', function() {
+    return view('principal.perfil_prof');
+}) -> name("info_p");
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

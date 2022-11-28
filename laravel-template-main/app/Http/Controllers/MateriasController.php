@@ -30,7 +30,7 @@ class MateriasController extends Controller
             'Professor' => $request->Professor,
         ]);
 
-    return view('materias.index'); 
+    return view('secretaria.home'); 
 
     }
 

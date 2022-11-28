@@ -33,7 +33,7 @@ class ProfessoresController extends Controller
         ]);  
 
         
-    return view('auth.register');
+    return view('auth.registerprofessor');
     
     //"Professor Criado com Sucesso!";
 

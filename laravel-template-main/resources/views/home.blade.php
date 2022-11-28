@@ -16,6 +16,15 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+                
+                <div>
+                    
+                <a class="btn btn-primary" href="/" role="button">Inicio</a>
+</div>
+
+
+
+                
             </div>
         </div>
     </div>

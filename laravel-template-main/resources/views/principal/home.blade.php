@@ -20,8 +20,8 @@
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+      background-color: #123;
+      height: 125%;
     }
     
     /* Set black background color, white text and some padding */
@@ -55,14 +55,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="/">Inicio</a></li>
         <li class="active"><a href="home_a">Aluno</a></li>
         <li class="active"><a href="home_p">Professor</a></li>
         <li class="active"><a href="#">Secretaria</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      
     </div>
   </div>
 </nav>
@@ -92,9 +90,6 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
 
 </body>
 </html>

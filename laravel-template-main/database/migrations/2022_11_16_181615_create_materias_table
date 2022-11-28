@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateMateriasTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('materias', function (Blueprint $table) {
+            $table->id();
+            $table->string('Nome');
+            $table->string('Desc_c');
+            $table->string('Desc_s');
+            $table->integer('Num_min');
+            $table->integer('Num_max');
+            $table->string('Status');
+            $table->string('Professor');
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('materias');
+    }
+};

@@ -63,10 +63,18 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
+                            <input type="hidden" value=1 name="aluno">
+                            <input type="hidden" value=0 name="professor">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+                        
+
                             </div>
+                            
+                            
+
+                            
                         </div>
                     </form>
                 </div>

@@ -20,8 +20,8 @@
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+      background-color: #123;
+      height: 125%;
     }
     
     /* Set black background color, white text and some padding */
@@ -55,14 +55,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="/">Inicio</a></li>
         <li class="active"><a href="home_a">Aluno</a></li>
         <li class="active"><a href="home_p">Professor</a></li>
         <li class="active"><a href="#">Secretaria</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      
     </div>
   </div>
 </nav>
@@ -70,13 +68,13 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Cursos</a></p>
-      <p><a href="info">Minhas informacoes</a></p>
-      <p><a href="#"></a></p>
+      <p><a href="indexalunos">Alunos</a></p>
+      <p><a href="indexprofessores">Professores</a></p>
+      <p><a href="indexmaterias">Materias</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Bem vindo, Secretario(a)!</h1>
-      <p>Aqui se encontram todas as funcionalidades necessarias para o seu ensino!</p>
+      <p>Aqui se encontram todas as funcionalidades necessarias para ensinar!</p>
       <hr>
       <h3></h3>
       <p></p>
@@ -91,10 +89,6 @@
     </div>
   </div>
 </div>
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
 
 </body>
 </html>

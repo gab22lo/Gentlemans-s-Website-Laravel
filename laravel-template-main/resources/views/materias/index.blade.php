@@ -7,7 +7,12 @@
                     <div class="card-header">
                         <h2>Materias</h2>
                     </div>
+                    
+      </ul>
                     <div class="card-body">
+                    <a href="/home_s" class="btn btn-success btn-sm">
+                           Voltar
+                        </a>
                         <a href="{{ url('/materias') }}" class="btn btn-success btn-sm" title="Cadastrar nova materia">
                            Cadastrar
                         </a>

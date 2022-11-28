@@ -33,7 +33,7 @@ class AlunosController extends Controller
             'Filme'=> $request->Filme,
         ]);                     
 
-        return view('auth.register');
+        return view('auth.registeraluno');
     
     }
 

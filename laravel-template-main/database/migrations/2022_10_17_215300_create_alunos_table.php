@@ -21,7 +21,9 @@ class CreateAlunosTable extends Migration
             $table->string('Rua');
             $table->string('Bairro');
             $table->string('Cidade');
+
             $table->integer('Número');
+
             $table->string('Filme');
             $table->timestamps();
         });
